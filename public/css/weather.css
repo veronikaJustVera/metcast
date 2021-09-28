@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/dosis/v19/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7Ml2xMB.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/dosis/v19/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/dosis/v19/HhyJU5sn9vOmLxNkIwRSjTVNWLEJBbMl2xMB.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/dosis/v19/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ6bQl2xMB.ttf) format('truetype');
+  }
+html,
+body {
+    height: 100%
+}
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center
+}
+
+.card {
+    background-color: #a5a5b1;
+    border-radius: 50px;
+    color: #2b304d;
+    font-family: 'Marcellus', serif
+}
+
+#heading {
+    font-size: 40px;
+    color: #2b304d;
+    width: 140px;
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details {
+    margin-left: 5px;
+}
+
+.temp-details>p>span,
+.grey {
+    color: #2b304d;
+    font-size: 20px
+}
+
+.fa {
+    color: #2b304d
+}
+
+*:focus {
+    outline: none
+}
+
+  .compass {
+    display: block;
+    width: 80px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    position: relative;
+    font-family: "Dosis";
+    color: #555;
+    text-shadow: 1px 1px 1px white;
+  }
+  .compass:before {
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    content: "N";
+    font-size: 14px;
+    top: -2px;
+  }
+  .compass .direction {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #f2f6f5;
+    background: -moz-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f6f5), color-stop(100%, #cbd5d6));
+    background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+    background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+    border-radius: 100%;
+  }
+  .compass .direction p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    display: block;
+    margin-top: -45px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .compass .arrow {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .compass .arrow:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid red;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+    z-index: 99;
+  }
+  .compass .arrow.nne {
+    transform: rotate(22.5deg);
+  }
+  .compass .arrow.ne {
+    transform: rotate(45deg);
+  }
+  .compass .arrow.ene {
+    transform: rotate(67.5deg);
+  }
+  .compass .arrow.e {
+    transform: rotate(90deg);
+  }
+  .compass .arrow.ese {
+    transform: rotate(112.5deg);
+  }
+  .compass .arrow.se {
+    transform: rotate(135deg);
+  }
+  .compass .arrow.sse {
+    transform: rotate(157.5deg);
+  }
+  .compass .arrow.s {
+    transform: rotate(180deg);
+  }
+  .compass .arrow.ssw {
+    transform: rotate(202.5deg);
+  }
+  .compass .arrow.sw {
+    transform: rotate(-135deg);
+  }
+  .compass .arrow.wsw {
+    transform: rotate(-114.5deg);
+  }
+  .compass .arrow.w {
+    transform: rotate(-90deg);
+  }
+  .compass .arrow.wnw {
+    transform: rotate(-69.5deg);
+  }
+  .compass .arrow.nw {
+    transform: rotate(-45deg);
+  }
+  .compass .arrow.nnw {
+    transform: rotate(-24.5deg);
+  }
